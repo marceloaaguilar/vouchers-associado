@@ -1,7 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
 };
+
+module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'sistema.exclusivepass.com.br',
+        port: '',
+        pathname: '/api/files/**',
+        search: '',
+      },
+    ],
+  },
+}
 
 export default nextConfig;
