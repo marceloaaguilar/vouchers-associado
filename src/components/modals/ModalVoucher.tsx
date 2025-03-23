@@ -72,7 +72,7 @@ export default function ModalVoucher({ isOpen, onClose, voucher, logoPartner, to
                                             <div className="border-dashed border-2 border-gray-400 px-4 py-2">
                                                 <p className="font-bold text-xl text-gray-700">{voucherCode}</p>
                                             </div>
-                                            <button className="px-8 py-2 rounded-3xl bg-[#881DED] text-white" onClick={() => copyVoucherToClipboard(voucherCode)}> Copiar</button>
+                                            <button  className="px-8 py-2 rounded-3xl bg-[#881DED] text-white focus:bg-[#c188f7fa] focus:outline-none" onClick={() => copyVoucherToClipboard(voucherCode)}> Copiar</button>
                                         </div>
                                     </div>
                                 )

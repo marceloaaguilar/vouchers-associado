@@ -29,7 +29,7 @@ export default function SelectInput({token, setCategoryFilter}: SelectInputProps
   }, [token]);
 
   return (
-    <div className="relative w-full max-w-[15rem]">
+    <div className="relative w-full">
       <select defaultValue={""} onChange={(e)=> setCategoryFilter(e.currentTarget.value)}
         className="p-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
          focus:ring-blue-500 focus:border-blue-500 block w-full appearance-none dark:bg-gray-700

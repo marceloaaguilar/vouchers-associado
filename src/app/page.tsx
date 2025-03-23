@@ -132,12 +132,18 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
+        <Navbar />
 
-      <div className="flex justify-center items-center gap-4 mt-8">
-        <SearchInput value={searchValue} setSearchValue={setSearchValue}/>
-        <SelectInput token={tokenUsr} setCategoryFilter={setSelectedCategory}/>
-      </div>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8 w-full max-w-2xl mx-auto">
+            <div className="w-full max-w-sm">
+                <SearchInput value={searchValue} setSearchValue={setSearchValue} />
+            </div>
+            <div className="w-full max-w-sm">
+                <SelectInput token={tokenUsr} setCategoryFilter={setSelectedCategory} />
+            </div>
+        </div>
+
+
 
         {paginedVouchers.length > 0  || (searchValue || selectedCategory && vouchersUsr.length > 0)?
             <div>

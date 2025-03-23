@@ -56,7 +56,7 @@ export default function FirstAccessForm(props:FormProps) {
               <form>
                 <>
                   <Label htmlFor="cpf">CPF</Label>
-                  <Input id="cpf" value={cpfPasswordRequest} onChange={(e) => setCpfPasswordRequest(e.target.value)} placeholder="Seu CPF" />
+                  <Input id="cpf" maxLength={14} value={cpfPasswordRequest} onChange={(e) => setCpfPasswordRequest(e.target.value)} placeholder="Seu CPF" />
                 </>
               </form>
             </CardContent>

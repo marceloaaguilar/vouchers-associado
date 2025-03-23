@@ -100,7 +100,7 @@ export default function LoginForm(props:FormProps) {
                     <div className="grid w-full items-center gap-4">
                       <div className="flex flex-col space-y-1.5">
                         <Label htmlFor="cpf">CPF</Label>
-                        <Input id="cpf" value={cpfLogin} onChange={(e) => setCpfLogin(e.target.value)} placeholder="Seu CPF" />
+                        <Input id="cpf" maxLength={14} value={cpfLogin} onChange={(e) => setCpfLogin(e.target.value)} placeholder="Seu CPF" />
                       </div>
                       <div className="flex flex-col space-y-1.5">
                         <Label htmlFor="senha">Senha</Label>
